@@ -1,4 +1,5 @@
-import event from './event'
-import menuItem from './menuItem'
+import logo from './header/logo'
+import menu from './header/menu'
+import button from './header/button'
 
-export const schemaTypes = [event, menuItem]
+export const schemaTypes = [logo, menu, button]
