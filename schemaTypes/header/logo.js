@@ -15,8 +15,17 @@ export default {
       title: 'Logo Image',
       type: 'image',
       options: {
-        hotspot: true, // Позволяет задать фокус области картинки
+        hotspot: true,
       },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative text',
+          type: 'string',
+          description: 'Текст для атрибута alt (для SEO и доступности)',
+          validation: (Rule) => Rule.required(),
+        },
+      ],
       validation: (Rule) => Rule.required(),
     },
   ],
