@@ -1,7 +1,7 @@
 export default {
   name: 'button',
   title: 'Button',
-  type: 'object', // Объект, который можно вставлять внутрь других схем (например, в меню или хедер)
+  type: 'document',
   fields: [
     {
       name: 'title',
