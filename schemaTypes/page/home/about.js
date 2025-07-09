@@ -1,6 +1,6 @@
 export default {
   name: 'aboutSection',
-  title: 'Блок «О нас»',
+  title: 'Главная | Блок «О нас»',
   type: 'document',
   fields: [
     {

@@ -1,6 +1,6 @@
 export default {
   name: 'button',
-  title: 'Button',
+  title: 'Header | Button',
   type: 'document',
   fields: [
     {

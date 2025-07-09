@@ -1,6 +1,6 @@
 export default {
   name: 'event',
-  title: 'Event',
+  title: 'Главная | Мероприятия',
   type: 'document',
   fields: [
     {

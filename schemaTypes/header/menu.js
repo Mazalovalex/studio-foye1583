@@ -1,6 +1,6 @@
 export default {
   name: 'menuItem',
-  title: 'Menu Item',
+  title: 'Header | Пункты меню',
   type: 'document',
   fields: [
     {

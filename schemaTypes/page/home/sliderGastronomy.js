@@ -1,6 +1,6 @@
 export default {
   name: 'sliderGastronomy',
-  title: 'Слайдер — Гастрономия театра',
+  title: 'Главная | Слайдер — Гастрономия театра',
   type: 'document',
   fields: [
     {
