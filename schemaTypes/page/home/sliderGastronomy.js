@@ -35,6 +35,40 @@ export default {
         },
       ],
     },
+    {
+      name: 'description',
+      title: 'Описание',
+      type: 'object',
+      fields: [
+        {
+          name: 'line1',
+          title: 'Первая строка описания',
+          type: 'string',
+        },
+        {
+          name: 'line2',
+          title: 'Вторая строка описания',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'button',
+      title: 'Кнопка',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Текст кнопки',
+          type: 'string',
+        },
+        {
+          name: 'url',
+          title: 'URL кнопки',
+          type: 'string',
+        },
+      ],
+    },
   ],
   preview: {
     prepare() {
