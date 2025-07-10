@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default {
   name: 'event',
   title: 'Главная | Мероприятия',
@@ -34,7 +36,38 @@ export default {
       name: 'datetime',
       title: 'Дата и время события (объединенные)',
       type: 'datetime',
-      hidden: true, // скрываем в админке, если не нужно вручную править
+      hidden: true,
     },
   ],
+
+  preview: {
+    select: {
+      title: 'name',
+      date: 'date',
+      time: 'time',
+      media: 'image',
+    },
+    prepare(selection) {
+      const {title, date, time, media} = selection
+      let subtitle = ''
+      if (date) {
+        subtitle = `${date}`
+        if (time) subtitle += ` ${time}`
+      }
+
+      // Создаем дату и время события
+      const datetimeStr = date && time ? `${date}T${time}` : null
+      const eventDate = datetimeStr ? new Date(datetimeStr) : null
+      const now = new Date()
+
+      // Проверяем, прошло ли событие
+      const isPast = eventDate ? eventDate < now : false
+
+      return {
+        title: isPast ? `(Прошедшее) ${title}` : title,
+        subtitle,
+        media,
+      }
+    },
+  },
 }
