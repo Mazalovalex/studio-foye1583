@@ -10,15 +10,9 @@ export default {
       of: [
         {
           type: 'image',
+          name: 'image',
+          title: 'Изображение',
           options: {hotspot: true},
-          fields: [
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Альт-текст',
-              validation: (Rule) => Rule.required().max(100),
-            },
-          ],
         },
       ],
     },

@@ -30,5 +30,11 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
+    {
+      name: 'datetime',
+      title: 'Дата и время события (объединенные)',
+      type: 'datetime',
+      hidden: true, // скрываем в админке, если не нужно вручную править
+    },
   ],
 }
