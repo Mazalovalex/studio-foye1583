@@ -64,7 +64,7 @@ export default {
       const isPast = eventDate ? eventDate < now : false
 
       return {
-        title: isPast ? `(Прошедшее) ${title}` : title,
+        title: isPast ? ` ❌ (Прошедшее) ${title}` : title,
         subtitle,
         media,
       }
